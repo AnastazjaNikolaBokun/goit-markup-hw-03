@@ -1,0 +1,179 @@
+:root {
+  --textcolor: rgba(33, 33, 33, 1);
+  --textcolorsecond: rgba(117, 117, 117, 1);
+  --textcolorthird: rgba(255, 255, 255, 1);
+  --textcolorfourth: rgba(255, 255, 255, 0.6);
+  --markcolor: rgba(33, 150, 243, 1);
+  --studiocolor: rgba(0, 0, 0, 1);
+  --backgroundsecond: rgba(47, 48, 58, 1);
+  --buttoncolor: rgba(245, 244, 250, 1);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--textcolor);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:focus {
+  color: var(--markcolor);
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.web {
+  color: var(--markcolor);
+}
+
+.studio {
+  color: var(--studiocolor);
+}
+
+.studio-second {
+  color: var(--textcolorthird);
+}
+
+.header-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+}
+
+.contact {
+  color: var(--textcolorsecond);
+}
+
+.button-main {
+  background-color: var(--buttoncolor);
+  width: 93px;
+  height: 38px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+}
+
+.button-main:hover,
+.button-main:focus {
+  background-color: var(--markcolor);
+  width: 121px;
+  height: 38px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--textcolorthird);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.footer-style {
+  background-color: var(--backgroundsecond);
+  color: var(--textcolorthird);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.contact-footer {
+  color: var(--textcolorfourth);
+}
+
+#kontakt {
+  font-style: normal;
+}
+
+.motto {
+  background-color: var(--backgroundsecond);
+  color: var(--textcolorthird);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-alternative {
+  background-color: var(--markcolor);
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--textcolorthird);
+  cursor: pointer;
+}
+
+.header-third {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.text-main {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--textcolorsecond);
+}
+
+.header-second {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+}
+
+#agencja {
+  background-color: var(--buttoncolor);
+}
+
+.imagedecor-one figure {
+  background-color: var(--textcolorthird);
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.text-image p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.18;
+  color: var(--textcolorsecond);
+}
+
+.imagedecor-two figure {
+  background-color: var(--textcolorthird);
+  width: 370px;
+  height: 404px;
+  border: 1px solid rgb(238, 238, 238);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.text-image-portfolio p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  color: var(--textcolorsecond);
+}
