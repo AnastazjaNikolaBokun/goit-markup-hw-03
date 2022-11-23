@@ -7,6 +7,7 @@
   --studiocolor: rgba(0, 0, 0, 1);
   --backgroundsecond: rgba(47, 48, 58, 1);
   --buttoncolor: rgba(245, 244, 250, 1);
+  --borderheader: rgba(236, 236, 236, 1);
 }
 
 body {
@@ -22,6 +23,11 @@ a {
 a:hover,
 a:focus {
   color: var(--markcolor);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -45,13 +51,52 @@ a:focus {
 }
 
 .header-text {
+  display: flex;
+  width: 1200px;
+  padding: 16px 21px 17px 21px;
+  align-items: center;
+  border-bottom: 1px var(--borderheader) solid;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
 }
 
+.header-navigation {
+  display: flex;
+  width: 347px;
+  justify-content: space-between;
+  padding: 0 0 0 93px;
+  list-style: none;
+}
+
+.header-address {
+  display: flex;
+  width: 666px;
+  padding: 0 0 0 371px;
+  justify-content: space-between;
+  list-style: none;
+  /*
+    border-color: rgb(0, 0, 0);
+  border-width: 1px;
+  border-style: dashed;*/
+}
+
 .contact {
   color: var(--textcolorsecond);
+}
+
+.section {
+  padding: 94px 0 94px 0;
+  /*border-color: pink;
+  border-width: 1px;
+  border-style: dashed;*/
+}
+
+.section-two {
+  padding: 0 0 94px 0;
+  /*border-color: pink;
+  border-width: 1px;
+  border-style: dashed;*/
 }
 
 .button-main {
@@ -80,10 +125,17 @@ a:focus {
 }
 
 .footer-style {
+  padding: 60px 0 60px 15px;
   background-color: var(--backgroundsecond);
   color: var(--textcolorthird);
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer-address {
+  list-style: none;
+  padding: 20px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .contact-footer {
@@ -92,16 +144,25 @@ a:focus {
 
 #kontakt {
   font-style: normal;
+  list-style: none;
 }
 
 .motto {
+  padding: 200px 0 200px 0;
   background-color: var(--backgroundsecond);
+  text-align: center;
+}
+
+.motto h1 {
+  max-width: 696px;
+  padding: 0 20px 30px 20px;
   color: var(--textcolorthird);
+  margin: auto;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .button-alternative {
@@ -109,6 +170,7 @@ a:focus {
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -117,24 +179,60 @@ a:focus {
   cursor: pointer;
 }
 
+.text-main {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1170px;
+  list-style: none;
+  /*border-color: pink;
+  border-width: 1px;
+  border-style: dashed;*/
+}
+
+.text-main li:nth-child(-n + 3) {
+  padding: 0 30px 0 0;
+}
+
 .header-third {
+  margin: 0;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
   text-transform: uppercase;
+  /*border-color: pink;
+  border-width: 1px;
+  border-style: dashed;*/
 }
 
-.text-main {
+.text-main-item {
+  margin: 0;
+  padding: 10px 0 0 0;
   font-size: 14px;
   line-height: 1.71;
   color: var(--textcolorsecond);
 }
 
 .header-second {
+  margin: 0;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
+  /*border-color: pink;
+  border-width: 1px;
+  border-style: dashed;*/
+}
+
+.section-two-pictures {
+  list-style: none;
+  display: flex;
+  padding: 50px 15px 0 15px;
+  margin: 0 auto;
+  justify-content: space-between;
+  /*border-color: pink;
+  border-width: 1px;
+  border-style: dashed;*/
 }
 
 #agencja {
@@ -143,6 +241,7 @@ a:focus {
 
 .imagedecor-one figure {
   background-color: var(--textcolorthird);
+  margin: 0;
   width: 270px;
   height: 368px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -152,6 +251,17 @@ a:focus {
   font-weight: 500;
   line-height: 1.18;
   text-align: center;
+}
+
+.imagedecor-one {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  padding: 50px 15px 0 15px;
+  /*border-color: pink;
+  border-width: 1px;
+  border-style: dashed;*/
+  justify-content: space-between;
 }
 
 .text-image p {
