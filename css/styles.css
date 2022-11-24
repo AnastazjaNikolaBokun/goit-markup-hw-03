@@ -99,10 +99,22 @@ a:focus {
   border-style: dashed;*/
 }
 
+.portfolio-button {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 0 50px 0;
+  max-width: 572px;
+  list-style: none;
+  justify-content: space-between;
+  /*border-color: pink;
+  border-width: 1px;
+  border-style: dashed;*/
+}
+
 .button-main {
   background-color: var(--buttoncolor);
-  width: 93px;
-  height: 38px;
+  padding: 6px 22px 6px 22px;
+  border-style: none;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -113,8 +125,7 @@ a:focus {
 .button-main:hover,
 .button-main:focus {
   background-color: var(--markcolor);
-  width: 121px;
-  height: 38px;
+  padding: 6px 22px 6px 22px;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -271,19 +282,51 @@ a:focus {
   color: var(--textcolorsecond);
 }
 
+.imagedecor-two {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .imagedecor-two figure {
   background-color: var(--textcolorthird);
+  margin: 0;
   width: 370px;
-  height: 404px;
+}
+
+.imagedecor-two figcaption {
   border: 1px solid rgb(238, 238, 238);
+  margin: 0;
+  padding: 20px 24px 20px 24px;
+  /*border-color: pink;
+  border-width: 1px;
+  border-style: dashed;*/
+}
+
+.imagedecor-two img {
+  display: block;
+}
+
+.imagedecor-two h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
+  margin: 0;
+  /*border-color: pink;
+  border-width: 1px;
+  border-style: dashed;*/
 }
 
-.text-image-portfolio p {
+.imagedecor-two p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
+  margin: 0;
   color: var(--textcolorsecond);
+  /*border-color: pink;
+  border-width: 1px;
+  border-style: dashed;*/
 }
