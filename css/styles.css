@@ -1,18 +1,18 @@
 :root {
-  --textcolor: rgba(33, 33, 33, 1);
-  --textcolorsecond: rgba(117, 117, 117, 1);
-  --textcolorthird: rgba(255, 255, 255, 1);
-  --textcolorfourth: rgba(255, 255, 255, 0.6);
-  --markcolor: rgba(33, 150, 243, 1);
-  --studiocolor: rgba(0, 0, 0, 1);
-  --backgroundsecond: rgba(47, 48, 58, 1);
-  --buttoncolor: rgba(245, 244, 250, 1);
-  --borderheader: rgba(236, 236, 236, 1);
+  --text-color: rgba(33, 33, 33, 1);
+  --text-color-second: rgba(117, 117, 117, 1);
+  --text-color-third: rgba(255, 255, 255, 1);
+  --text-color-fourth: rgba(255, 255, 255, 0.6);
+  --mark-color: rgba(33, 150, 243, 1);
+  --studio-color: rgba(0, 0, 0, 1);
+  --background-second: rgba(47, 48, 58, 1);
+  --button-color: rgba(245, 244, 250, 1);
+  --border-header: rgba(236, 236, 236, 1);
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--textcolor);
+  color: var(--text-color);
 }
 
 a {
@@ -22,11 +22,16 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--markcolor);
+  color: var(--mark-color);
 }
 
-.container {
+.container > .section > .motto {
   width: 1200px;
+  margin: 0 auto;
+}
+
+.content-width {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -39,23 +44,24 @@ a:focus {
 }
 
 .web {
-  color: var(--markcolor);
+  color: var(--mark-color);
 }
 
 .studio {
-  color: var(--studiocolor);
+  color: var(--studio-color);
 }
 
 .studio-second {
-  color: var(--textcolorthird);
+  color: var(--text-color-third);
 }
 
 .header-text {
   display: flex;
-  width: 1200px;
+  margin: 0 auto;
   padding: 16px 21px 17px 21px;
+  justify-content: center;
   align-items: center;
-  border-bottom: 1px var(--borderheader) solid;
+  border-bottom: 1px var(--border-header) solid;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
@@ -82,21 +88,15 @@ a:focus {
 }
 
 .contact {
-  color: var(--textcolorsecond);
+  color: var(--text-color-second);
 }
 
 .section {
   padding: 94px 0 94px 0;
-  /*border-color: pink;
-  border-width: 1px;
-  border-style: dashed;*/
 }
 
 .section-two {
   padding: 0 0 94px 0;
-  /*border-color: pink;
-  border-width: 1px;
-  border-style: dashed;*/
 }
 
 .portfolio-button {
@@ -112,7 +112,7 @@ a:focus {
 }
 
 .button-main {
-  background-color: var(--buttoncolor);
+  background-color: var(--button-color);
   padding: 6px 22px 6px 22px;
   border-style: none;
   border-radius: 4px;
@@ -124,21 +124,22 @@ a:focus {
 
 .button-main:hover,
 .button-main:focus {
-  background-color: var(--markcolor);
+  background-color: var(--mark-color);
   padding: 6px 22px 6px 22px;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  color: var(--textcolorthird);
+  color: var(--text-color-third);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .footer-style {
   padding: 60px 0 60px 15px;
-  background-color: var(--backgroundsecond);
-  color: var(--textcolorthird);
+  margin: 0 auto;
+  background-color: var(--background-second);
+  color: var(--text-color-third);
   font-size: 14px;
   line-height: 1.71;
 }
@@ -146,11 +147,10 @@ a:focus {
 .footer-address {
   list-style: none;
   padding: 20px 0 0 0;
-  margin: 0 0 0 0;
 }
 
 .contact-footer {
-  color: var(--textcolorfourth);
+  color: var(--text-color-fourth);
 }
 
 #kontakt {
@@ -160,14 +160,14 @@ a:focus {
 
 .motto {
   padding: 200px 0 200px 0;
-  background-color: var(--backgroundsecond);
+  background-color: var(--background-second);
   text-align: center;
 }
 
 .motto h1 {
   max-width: 696px;
   padding: 0 20px 30px 20px;
-  color: var(--textcolorthird);
+  color: var(--text-color-third);
   margin: auto;
   font-size: 44px;
   font-weight: 900;
@@ -177,7 +177,7 @@ a:focus {
 }
 
 .button-alternative {
-  background-color: var(--markcolor);
+  background-color: var(--mark-color);
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -186,7 +186,7 @@ a:focus {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  color: var(--textcolorthird);
+  color: var(--text-color-third);
   cursor: pointer;
 }
 
@@ -196,9 +196,6 @@ a:focus {
   padding: 0;
   max-width: 1170px;
   list-style: none;
-  /*border-color: pink;
-  border-width: 1px;
-  border-style: dashed;*/
 }
 
 .text-main li:nth-child(-n + 3) {
@@ -211,9 +208,6 @@ a:focus {
   font-weight: 700;
   line-height: 1.17;
   text-transform: uppercase;
-  /*border-color: pink;
-  border-width: 1px;
-  border-style: dashed;*/
 }
 
 .text-main-item {
@@ -221,7 +215,7 @@ a:focus {
   padding: 10px 0 0 0;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--textcolorsecond);
+  color: var(--text-color-second);
 }
 
 .header-second {
@@ -230,9 +224,6 @@ a:focus {
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
-  /*border-color: pink;
-  border-width: 1px;
-  border-style: dashed;*/
 }
 
 .section-two-pictures {
@@ -241,17 +232,14 @@ a:focus {
   padding: 50px 15px 0 15px;
   margin: 0 auto;
   justify-content: space-between;
-  /*border-color: pink;
-  border-width: 1px;
-  border-style: dashed;*/
 }
 
 #agencja {
-  background-color: var(--buttoncolor);
+  background-color: var(--button-color);
 }
 
 .imagedecor-one figure {
-  background-color: var(--textcolorthird);
+  background-color: var(--text-color-third);
   margin: 0;
   width: 270px;
   height: 368px;
@@ -269,9 +257,6 @@ a:focus {
   list-style: none;
   margin: 0 auto;
   padding: 50px 15px 0 15px;
-  /*border-color: pink;
-  border-width: 1px;
-  border-style: dashed;*/
   justify-content: space-between;
 }
 
@@ -279,7 +264,7 @@ a:focus {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.18;
-  color: var(--textcolorsecond);
+  color: var(--text-color-second);
 }
 
 .imagedecor-two {
@@ -292,18 +277,17 @@ a:focus {
 }
 
 .imagedecor-two figure {
-  background-color: var(--textcolorthird);
+  background-color: var(--text-color-third);
   margin: 0;
   width: 370px;
 }
 
 .imagedecor-two figcaption {
-  border: 1px solid rgb(238, 238, 238);
+  border-left: 1px solid rgb(238, 238, 238);
+  border-bottom: 1px solid rgb(238, 238, 238);
+  border-right: 1px solid rgb(238, 238, 238);
   margin: 0;
   padding: 20px 24px 20px 24px;
-  /*border-color: pink;
-  border-width: 1px;
-  border-style: dashed;*/
 }
 
 .imagedecor-two img {
@@ -315,9 +299,6 @@ a:focus {
   font-weight: 700;
   line-height: 2;
   margin: 0;
-  /*border-color: pink;
-  border-width: 1px;
-  border-style: dashed;*/
 }
 
 .imagedecor-two p {
@@ -325,8 +306,5 @@ a:focus {
   font-weight: 400;
   line-height: 1.87;
   margin: 0;
-  color: var(--textcolorsecond);
-  /*border-color: pink;
-  border-width: 1px;
-  border-style: dashed;*/
+  color: var(--text-color-second);
 }
